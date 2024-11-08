@@ -12,24 +12,17 @@ A simple REST API built with Java Spring Boot (Java 11). It supports basic GET a
 - Preloaded with one dummy message on startup.
 
 ## Dependencies:
-- **Java 11** installed
+- **Java 11** 
 - **Maven 3.9.9**
-
-## Project Structure
-src/
-├── main/java/com/example/myapi
-│   ├── Application.java       # Main entry point
-│   ├── controller/ApiController.java # REST Controller
-│   └── model/Message.java     # Message entity
-└── resources/application.properties
 
 ### Run the Application
 
-1. **Build the JAR**:
-   ```
+**Build the JAR**:
+```
    mvn clean package
    
    java -jar target/fast_api-0.0.1-SNAPSHOT.jar
+   
 ```
 
 ### Test Endpoints:
@@ -38,13 +31,12 @@ src/
 `POST: http://localhost:8080/api/messages`
 
 Example JSON for POST:
-json
-Copy code
 ```
 {
   "content": "Some dummy data!",
   "sender": "Josepe"
 }
 ```
+
 
 
